@@ -1,0 +1,136 @@
+{
+ "quizzes": [
+  {
+   "questions": [
+    {
+     "text": "Jakiego koloru jest niebo?",
+     "answers": [
+      "Czerwone",
+      "Białe",
+      "Żółte",
+      "Niebieskie"
+     ],
+     "correctAnswerIndex": 3
+    },
+    {
+     "text": "Jaki jest najwyższy szczyt na Ziemi?",
+     "answers": [
+      "Mont Blanc",
+      "K2",
+      "Mount Everest",
+      "Rysy"
+     ],
+     "correctAnswerIndex": 2
+    },
+    {
+     "text": "W którym roku Neil Armstrong stanął na Księżycu?",
+     "answers": [
+      "1961",
+      "1965",
+      "1969",
+      "1972"
+     ],
+     "correctAnswerIndex": 2
+    }
+   ]
+  },
+  {
+   "questions": [
+    {
+     "text": "Co powstanie z wody, gdy ją zamrozimy?",
+     "answers": [
+      "para",
+      "lód",
+      "chmura",
+      "mleko"
+     ],
+     "correctAnswerIndex": 1
+    },
+    {
+     "text": "Stolica Hiszpanii to",
+     "answers": [
+      "Barcelona",
+      "Rio de Janeiro",
+      "Madryt",
+      "Walencja"
+     ],
+     "correctAnswerIndex": 2
+    },
+    {
+     "text": "Symbol pierwiastka helu to",
+     "answers": [
+      "He",
+      "H",
+      "Fe",
+      "O"
+     ],
+     "correctAnswerIndex": 0
+    },
+    {
+     "text": "Ile punktów wart jest rzut osobisty w koszykówce?",
+     "answers": [
+      "1 punkt",
+      "2 punkty",
+      "3 punkty",
+      "4 punkty"
+     ],
+     "correctAnswerIndex": 0
+    },
+    {
+     "text": "Która planeta znajduje się najbliżej Ziemi?",
+     "answers": [
+      "Mars",
+      "Merkury",
+      "Neptun",
+      "Wenus"
+     ],
+     "correctAnswerIndex": 3
+    }
+   ]
+  },
+  {
+   "questions": [
+    {
+     "text": "Ile osób jeździ tandemem?",
+     "answers": [
+      "jedna",
+      "dwie",
+      "cztery",
+      "osiem"
+     ],
+     "correctAnswerIndex": 1
+    },
+    {
+     "text": "Kto był pierwszym królem Polski",
+     "answers": [
+      "Siemowit",
+      "Mieszko I",
+      "Bolesław Chrobry",
+      "Mieszko II"
+     ],
+     "correctAnswerIndex": 2
+    },
+    {
+     "text": "Które z tych państw jest największe?",
+     "answers": [
+      "Kanada",
+      "Brazylia",
+      "Niemcy",
+      "Indie"
+     ],
+     "correctAnswerIndex": 0
+    },
+    {
+     "text": "Ile kości ma dorosły człowiek?",
+     "answers": [
+      "192",
+      "206",
+      "215",
+      "270"
+     ],
+     "correctAnswerIndex": 1
+    }
+   ]
+  }
+ ]
+}
