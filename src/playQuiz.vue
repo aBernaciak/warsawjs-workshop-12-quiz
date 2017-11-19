@@ -1,9 +1,9 @@
 <template>
   <div id="playquiz">
-    <b-alert show variant="primary" v-if="messageInfo">{{messageInfo}}</b-alert>
+    <b-alert show :variant="messageInfo.variant" v-if="messageInfo">{{messageInfo.text}}</b-alert>
     <div v-if="!stillPlaying">
       <b-alert show variant="success">Wygrana</b-alert>
-      <button class="btn-primary" @click="startAgain">Jeszcze raz?</button>
+      <button class="btn btn-primary" @click="startAgain">Jeszcze raz?</button>
     </div>
     <div v-else>
       <h3>{{questions.text}}</h3>
@@ -17,12 +17,12 @@
         </div>
         <div class="col-md-8">
           <QuizQuestion :questionPassed="questions" 
-                        v-on:selected="selectAnswer"
-                        >
+                        v-on:selected="selectAnswer">
           </QuizQuestion>
         </div>
       </div>
     </div>
+    <router-link to="/" class="btn btn-primary">Wróc do strony głównej</router-link>
   </div>
 </template>
 
@@ -38,7 +38,7 @@ export default {
       questionsInitial: [],
       questions: [],
       currentIndex: 0,
-      messageInfo: '',
+      messageInfo: {text: '', variant: ''},
       stillPlaying: true,
     }
   },
@@ -53,17 +53,19 @@ export default {
     },
     selectAnswer(index) {
       if(this.questions.correctAnswerIndex === index) {
-        this.messageInfo = "Dobra odpowiedź."
+        this.messageInfo.text = "Dobra odpowiedź.";
+        this.messageInfo.variant = "success";
         this.progress();
       }
       else {
-        this.messageInfo = "Zła odpowiedź. Wracamy do początku.";
+        this.messageInfo.text = "Zła odpowiedź. Wracamy do początku.";
+        this.messageInfo.variant = "danger";
         this.currentIndex = 0;
         this.questions = this.random(this.questionsInitial[this.currentIndex].questions);
       }
     },
     progress() {
-      if(this.currentIndex == 2) {
+      if(this.currentIndex == (this.questionsInitial.length) - 1) {
         this.stillPlaying = false;
       }
       else {
@@ -81,11 +83,5 @@ export default {
 </script>
 
 <style lang="scss">
-  .list-group-item {
-    cursor: pointer;
-    &:hover {
-      background: #007bff;
-      color: #fff;
-    }
-  }
+
 </style>

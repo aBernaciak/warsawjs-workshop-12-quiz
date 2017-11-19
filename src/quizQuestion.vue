@@ -1,5 +1,5 @@
 <template>
-	<b-list-group>
+	<b-list-group class="questions-list">
   	<b-list-group-item v-for="(question, index) in questionPassed.answers"
                      @click="selectAnswer(index)">
        {{question}}
@@ -25,4 +25,11 @@ export default {
 </script>
 
 <style lang="scss">
+	.questions-list .list-group-item {
+    cursor: pointer;
+    &:hover {
+      background: #007bff;
+      color: #fff;
+    }
+  }
 </style>

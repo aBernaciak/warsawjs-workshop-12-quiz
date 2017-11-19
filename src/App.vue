@@ -2,9 +2,8 @@
   <div id="app">
     <div class="container">
       <h1>Workshop vuejs</h1>
-      <playQuiz></playQuiz>
+      <router-view></router-view>
     </div>
-    
   </div>
 </template>
 
